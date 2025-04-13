@@ -15,7 +15,7 @@ Métodos de Evaluación:
   P(x) = a₀ + x(a₁ + x(a₂ + ... + x(aₙ₋₁ + x·aₙ)...)
   Complejidad computacional: O(n) operaciones, siendo óptimo para computación.
 
-<img width="344" alt="image" src="https://github.com/user-attachments/assets/5186cad7-d571-456a-8052-02910eea618f" />
+<img width="451" alt="image" src="https://github.com/user-attachments/assets/adaa01a1-243f-4c7a-9903-0b1f9f123ac4" />
 
 Análisis Comparativo
 Los resultados experimentales demuestran que el método de Horner presenta menor tiempo promedio de evaluación (en nanosegundos),mayor eficiencia computacional, comportamiento temporal lineal acorde con su complejidad O(n). En contraste, el método estándar muestra: tiempos de ejecución significativamente mayores, crecimiento exponencial del tiempo de ejecución, comportamiento acorde con su complejidad O(n²).
