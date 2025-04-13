@@ -6,6 +6,7 @@ El análisis se centra en su eficiencia computacional y complejidad algorítmica
 El programa fue compilado utilizando el compilador predeterminado de Code::Blocks 20.03 (lanzado en marzo de 2020), GNU GCC (MinGW-w64).
 
 Métodos de Evaluación:
+
 -Método Estándar (Evaluación Directa): Este método consiste en calcular cada término del polinomio por separado mediante potencias de x y posteriormente sumar todos los       términos. Su implementación requiere :
     Cálculo individual de cada término aₙxⁿ
     Suma acumulativa de los resultados
@@ -15,7 +16,7 @@ Métodos de Evaluación:
   P(x) = a₀ + x(a₁ + x(a₂ + ... + x(aₙ₋₁ + x·aₙ)...)
   Complejidad computacional: O(n) operaciones, siendo óptimo para computación.
 
-<img width="451" alt="image" src="https://github.com/user-attachments/assets/adaa01a1-243f-4c7a-9903-0b1f9f123ac4" />
+<img width="460" alt="image" src="https://github.com/user-attachments/assets/057ef8d9-674f-4250-808f-45da8402a0da" />
 
 Análisis Comparativo
 Los resultados experimentales demuestran que el método de Horner presenta menor tiempo promedio de evaluación (en nanosegundos),mayor eficiencia computacional, comportamiento temporal lineal acorde con su complejidad O(n). En contraste, el método estándar muestra: tiempos de ejecución significativamente mayores, crecimiento exponencial del tiempo de ejecución, comportamiento acorde con su complejidad O(n²).
