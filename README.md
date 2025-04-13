@@ -21,6 +21,6 @@ Análisis Comparativo
 Los resultados experimentales demuestran que el método de Horner presenta menor tiempo promedio de evaluación (en nanosegundos),mayor eficiencia computacional, comportamiento temporal lineal acorde con su complejidad O(n). En contraste, el método estándar muestra: tiempos de ejecución significativamente mayores, crecimiento exponencial del tiempo de ejecución, comportamiento acorde con su complejidad O(n²).
 La diferencia fundamental radica en la implementación: mientras el método estándar requiere bucles anidados, el método de Horner se implementa con un único bucle.
 
-Conclusiones
+
 Este estudio evidencia la importancia de seleccionar algoritmos óptimos para resolver problemas computacionales. Aunque ambos métodos proporcionan soluciones válidas para la evaluación de polinomios, el método de Horner demuestra ser significativamente más eficiente.
 El análisis resalta un principio fundamental en diseño de algoritmos: con frecuencia es posible reformular problemas aparentemente complejos mediante aproximaciones matemáticas que permitan implementaciones computacionalmente más eficientes. La búsqueda de estas optimizaciones debe ser parte esencial del proceso de desarrollo de software, particularmente en aplicaciones que requieran procesamiento numérico intensivo.
