@@ -1,27 +1,26 @@
 # -Eficiencia-Polinomios-Horner
 
-En este repositorio compararemos el metodo de evaluacion de polinomios de Horner con el metodo estándar
+Este repositorio compara dos métodos para evaluar polinomios: el método estándar (evaluación directa) y el método de Horner (evaluación anidada). 
+El análisis se centra en su eficiencia computacional y complejidad algorítmica.
 
-Daniel Alberto flores Preciado
+El programa fue compilado utilizando el compilador predeterminado de Code::Blocks 20.03 (lanzado en marzo de 2020), GNU GCC (MinGW-w64).
 
-Este programa fue compilado por el pompilador predeterminado de Code::Blocks 20.03 (lanzado en marzo de 2020)  GNU GCC (MinGW-w64)
+Métodos de Evaluación:
+-Método Estándar (Evaluación Directa): Este método consiste en calcular cada término del polinomio por separado mediante potencias de x y posteriormente sumar todos los       términos. Su implementación requiere :
+    Cálculo individual de cada término aₙxⁿ
+    Suma acumulativa de los resultados
+    Complejidad computacional: O(n²) operaciones debido al cálculo de potencias.
 
--Método Estándar (Evaluación Directa): Consiste en calcular cada término del polinomio por separado (usando potencias de x ) y luego sumarlos.
-Su eficiencia es O(n^2) operaciones (por las potencias).
+-Método de Horner (Evaluación Anidada):Este método optimizado reestructura el polinomio como una serie de multiplicaciones y sumas anidadas:
+  P(x) = a₀ + x(a₁ + x(a₂ + ... + x(aₙ₋₁ + x·aₙ)...)
+  Complejidad computacional: O(n) operaciones, siendo óptimo para computación.
 
--Método de Horner (Evaluación Anidada): Reestructura el polinomio para minimizar operaciones, convirtiéndolo en una multiplicación y suma anidadas.
-Su eficiencia es O(n) operaciones (óptimo para computación).
+<img width="344" alt="image" src="https://github.com/user-attachments/assets/5186cad7-d571-456a-8052-02910eea618f" />
 
-<img width="351" alt="image" src="https://github.com/user-attachments/assets/4fc5885c-7a09-4450-b81c-c91fc3a8eb3e" />
+Análisis Comparativo
+Los resultados experimentales demuestran que el método de Horner presenta menor tiempo promedio de evaluación (en nanosegundos),mayor eficiencia computacional, comportamiento temporal lineal acorde con su complejidad O(n). En contraste, el método estándar muestra: tiempos de ejecución significativamente mayores, crecimiento exponencial del tiempo de ejecución, comportamiento acorde con su complejidad O(n²).
+La diferencia fundamental radica en la implementación: mientras el método estándar requiere bucles anidados, el método de Horner se implementa con un único bucle.
 
-
-
-
-
-Como podemos observar el metodo de Honer es mas eficiente, ya que su tiempo(nanosegundos) promedio de evalucacion es menor al metodo estandar, esto se debe por su complejidad algoritmica, el algoritmo estandar es un for anidado dentro de otro for y el metodo de horner es solo un for.
-Los tiempos promedios del metodo de horner se asemeja a una funcion lineal y esto lo podemos refutar por su complejidad algoritmica, a cambio del metodo estandar que va creciendo exponencialmente, esto igual lo podemos refutar con su complejidad algirtmica
-
-conclusiones: aveces podemos encontrar una solucion algoritmica que satisfaga nuestro problema pero a lo mejor no es tan viable algoritmicamente y a la larga, es por eso que es importante pensar y buscar como podermos simplificar o reescribir el mismo problema para encontrar una solucion mas simple y asi reducir el tiempo de un algirtmo 
-
-
-
+Conclusiones
+Este estudio evidencia la importancia de seleccionar algoritmos óptimos para resolver problemas computacionales. Aunque ambos métodos proporcionan soluciones válidas para la evaluación de polinomios, el método de Horner demuestra ser significativamente más eficiente.
+El análisis resalta un principio fundamental en diseño de algoritmos: con frecuencia es posible reformular problemas aparentemente complejos mediante aproximaciones matemáticas que permitan implementaciones computacionalmente más eficientes. La búsqueda de estas optimizaciones debe ser parte esencial del proceso de desarrollo de software, particularmente en aplicaciones que requieran procesamiento numérico intensivo.
